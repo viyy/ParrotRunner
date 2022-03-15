@@ -4,5 +4,8 @@
 public enum GameEventTypes
 {
     Death,
-    StartRun
+    StartRun,
+    StartDialogComplete,
+    ReadyToRun,
+    SetPause
 }

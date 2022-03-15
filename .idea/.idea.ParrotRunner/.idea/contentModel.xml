@@ -12,6 +12,9 @@
         <e p="Scripts" t="Include">
           <e p="Danger.cs" t="Include" />
           <e p="Events" t="Include">
+            <e p="Args" t="Include">
+              <e p="PauseArgs.cs" t="Include" />
+            </e>
             <e p="EventManager.cs" t="Include" />
             <e p="GameEvent.cs" t="Include" />
             <e p="GameEventTypes.cs" t="Include" />
@@ -20,6 +23,11 @@
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
             <e p="StuckDetector.cs" t="Include" />
+          </e>
+          <e p="StartDialogController.cs" t="Include" />
+          <e p="TextWriter.cs" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="InputUtility.cs" t="Include" />
           </e>
         </e>
         <e p="Tilemap" t="Include">

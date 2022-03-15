@@ -8,12 +8,17 @@ public class StuckDetector : MonoBehaviour
     // Start is called before the first frame update
     public bool isStuck = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
+    {
+        EventManager.StartListening(GameEventTypes.Death, arg0 => isStuck = false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         isStuck = true;
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         isStuck = false;
     }
